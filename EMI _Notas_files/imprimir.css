@@ -1,0 +1,41 @@
+/* CSS Document */
+@media print
+{
+  body {
+    font-size: 10px;
+    font-family: Arial;
+  }
+
+  #logout{
+    display:none
+  }
+
+  #printsheet{
+    display:none
+  }
+
+  #gestion2{
+    display:none
+  }
+
+  /*estilos otras tablas*/
+
+  tr {
+    vertical-align: top;
+    border: 1px solid #666666;
+  }
+  tr,th,td {
+    padding: .20em;
+    border: 1px solid #666666;
+  }
+  td {
+    border: 1px solid #666666;
+  }
+  tfoot tr {
+    background: #fff url("../img/bbar.gif") repeat-x;
+  }
+  tfoot td, tfoot th{
+    color: #000;
+    border: 0px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI | Estudiante - Login 2025</title> <!-- Cambio aquí -->
+    <!-- Bootstrap -->
+    <link href="assets/gentelella2/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/gentelella2/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/gentelella2/build/css/custom.min.css" rel="stylesheet">
+</head>
+<body class="login emi-bg">
+    <div class="login_wrapper">
+        <div class="animate form login_form">
+            <section class="login_content">
+                <form id="loginForm" action="EMI _Estudiantes.html" method="GET">
+                    <h1>Estudiantes EMI</h1>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="CI o Cod SAGA" name="username">
+                    </div>
+                    <div>
+                        <label for="captcha">
+                            <img id="Imageid" src="captcha/1741989817,4.jpg" style="width: 150px; height: 32px; border: 0;" alt="Captcha">
+                        </label><br>
+                        <input class="form-control" type="text" autocomplete="off" name="userCaptcha" placeholder="Codigo de seguridad captcha">
+                    </div>
+                    <div>
+                        <button type="submit" class="form-control btn btn-primary btn-outline">Iniciar sesion</button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="hidden" name="token" value="311136bbf50dc2a94e6eb8512f2e62fb">
+                </form>
+                <div class="separator">
+                    <p class="change_link" style="font-size:14px;">
+                        ¿Como ingresar al sistema?&nbsp;
+                        <a href="login.html#signup" class="form-control btn btn-warning"> Ver instrucciones</a>
+                    </p>
+                </div>
+            </section>
+            <center>
+                <div>
+                    <h1>
+                        <p class="m-t">
+                            <div>
+                                <h5><img src="media/mlogoemi.png" width="62">ESCUELA MILITAR DE INGENIERÍA</h5>
+                            </div>
+                        </p>
+                    </h1>
+                    <p><a href="https://www.emi.edu.bo">© 2022 DNTIC</a></p>
+                </div>
+            </center>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/gentelella2/vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/gentelella2/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Script personalizado para evitar validaciones -->
+    <script>
+        document.getElementById('loginForm').onsubmit = function() {
+            // Redirige a EMI _Estudiantes.html
+            window.location.href = "EMI _Estudiantes.html";
+            return false; // Evita que el formulario se envíe realmente
+        };
+    </script>
+</body>
+</html>

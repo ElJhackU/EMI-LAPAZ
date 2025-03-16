@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EMI | Estudiantes</title>
+    <!-- Bootstrap -->
+    <link href="./EMI _Notas_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./EMI _Notas_files/nprogress.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="./EMI _Notas_files/custom.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="./EMI _Notas_files/jquery.min.js.descarga"></script>
+    <!-- Toastr -->
+    <link href="./EMI _Notas_files/toastr.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://notas.emi.edu.bo/assets/gentelella2/favicon.ico" type="image/x-icon">
+</head>
+<body class="nav-md footer_fixed">
+    <div class="container body">
+        <div class="main_container">
+            <!-- Sidebar -->
+            <div class="col-md-3 left_col hidden-print">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="https://notas.emi.edu.bo/" class="site_title logo-sm">
+                            <i class="fa iconlogo"></i> E<span>MI - DNI</span>
+                            <span class="logo-lg"><img src="./EMI _Notas_files/logo500.png" width="180"></span>
+                        </a>
+                    </div>
+                    <!-- Sidebar Menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section active">
+                            <h3>&nbsp;</h3>
+                            <ul class="nav side-menu">
+                                <li><a href="https://notas.emi.edu.bo/Inicio" style="color:#F6BB09;"><i class="fa fa-home"></i>Inicio</a></li>
+                                <li class="current-page"><a href="https://notas.emi.edu.bo/alumno" style="color:#EDEDED;"><i class="fa fa-newspaper-o"></i>Historial de notas</a></li>
+                                <li><a href="https://notas.emi.edu.bo/disciplina" style="color:#F6BB09;"><i class="fa fa-legal"></i>Disciplina</a></li>
+                                <li><a href="https://notas.emi.edu.bo/pagos" style="color:#F6BB09;"><i class="fa fa-money"></i>Historial de pagos</a></li>
+                                <li><a href="https://notas.emi.edu.bo/deudas" style="color:#F6BB09;"><i class="fa fa-money"></i>Pago online de cuotas</a></li>
+                                <li><a href="https://notas.emi.edu.bo/perfil" style="color:#F6BB09;"><i class="fa fa-user"></i>Datos personales</a></li>
+                                <li><a href="https://notas.emi.edu.bo/bibliotecas" style="color:#F6BB09;"><i class="fa fa-book"></i>Bibliotecas virtuales</a></li>
+                                <li><a href="https://notas.emi.edu.bo/facturas" style="color:#F6BB09;"><i class="fa fa-address-book"></i>Facturas de Pagos Online</a></li>
+                                <li><a href="https://notas.emi.edu.bo/logout" style="color:#F6BB09;"><i class="fa fa-power-off"></i>Salir</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Sidebar Menu -->
+                </div>
+            </div>
+            <!-- /Sidebar -->
+
+            <!-- Top Navigation -->
+            <div class="top_nav hidden-print">
+                <div class="nav_menu">
+                    <nav>
+                        <div class="nav navbar-nav">
+                            <div class="nav toggle">
+                                <a id="menu_toggle" title="" data-toggle="tooltip" data-placement="right" data-original-title="Ocultar/Mostrar menu"><i class="fa fa-bars"></i></a>
+                            </div>
+                            <div class="nav toggle">
+                                <a href="https://notas.emi.edu.bo/" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Pagina de inicio"><i class="fa fa-home"></i>&nbsp;&nbsp;Inicio</a>
+                            </div>
+                            <div class="nav toggle">
+                                <a href="https://notas.emi.edu.bo/alumno" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Cuentas"><i class="fa fa-newspaper-o"></i>Ver&nbsp;Notas</a>
+                            </div>
+                            <div class="nav toggle" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Imprimir pagina">
+                                <a href="https://notas.emi.edu.bo/alumno#" onclick="javascript:window.print();"><i class="fa fa-print"></i>Imprimir</a>
+                            </div>
+                            <div class="nav toggle" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Salir del sistema">
+                                <a href="https://notas.emi.edu.bo/login/logout"><i class="fa fa-power-off"></i>&nbsp;&nbsp;&nbsp;Salir</a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="./EMI _Notas_files/silueta-th.png" alt="...">ROSALES ALCON, JUAN IGNACIO
+                                        <span class="fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a href="https://notas.emi.edu.bo/login/logout"><i class="fa fa-sign-out pull-right"></i> Salir</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /Top Navigation -->
+
+            <!-- Page Content -->
+            <div class="right_col" role="main" style="background: white; min-height: 914px;">
+                <div>
+                    <div class="clearfix"></div>
+                    <div class="y_panel">
+                        <div class="y_content">
+                            <div class="hidden-print"></div>
+                            <center>
+                                <h2>HISTORIAL DE NOTAS</h2>
+                                <table style="border: 0;">
+                                    <tbody>
+                                        <tr style="border: 0;">
+                                            <td rowspan="7" style="border: 0;"><div></div></td>
+                                            <td style="border: 0;" rowspan="6">&nbsp;&nbsp;</td>
+                                            <td style="border: 0;"><b>Nombre: </b></td>
+                                            <td style="border: 0;">EST. ROSALES ALCON, JUAN IGNACIO</td>
+                                            <td rowspan="7" style="border: 0;"><img src="./EMI _Notas_files/qrc6c2bcab7a99a4cfcc4e638aa91c53aa.png" border="0"></td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;"><b>Codigo: </b></td>
+                                            <td style="border: 0;">A30898-4</td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;"><b>CI: </b></td>
+                                            <td style="border: 0;">9099638</td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;"><b>Especialidad: </b></td>
+                                            <td style="border: 0;">INGENIERIA COMERCIAL</td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;"><b>Gestión: </b></td>
+                                            <td style="border: 0;">
+                                                <form name="generar" action="https://notas.emi.edu.bo/alumno" method="POST">
+                                                    <select name="periodoalum" onchange="this.form.submit()">
+                                                        <option value="" selected="selected">Elija peridodo academico</option>
+                                                        <option value="82372_2023_7_1_0">Preuniversitario/2023 ~ PRIMER REGULAR</option>
+                                                        <option value="82372_2024_1_2_0">I/2024 ~ Primer Semestre</option>
+                                                        <option value="82372_2024_2_3_0" selected="selected">II/2024 ~ Segundo Semestre</option>
+                                                        <option value="82372_2025_25_4_0">Cursos de Temporada (VERANO)/2025 ~ Segundo Semestre</option>
+                                                    </select>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;"><b>Fecha: </b></td>
+                                            <td style="border: 0;">Sábado 15 de Marzo de 2025</td>
+                                        </tr>
+                                        <tr style="border: 0;">
+                                            <td style="border: 0;" colspan="2">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-striped responsive-utilities jambo_table">
+                                    <thead>
+                                        <tr style="border: 0;">
+                                            <th colspan="15" valign="middle" align="center" style="border: 0;">
+                                                <center><h2>Tabla de Notas</h2></center>
+                                            </th>
+                                        </tr>
+                                        <tr class="headings">
+                                            <th rowspan="2" width="4%">Sem.</th>
+                                            <th rowspan="2">Materia</th>
+                                            <th colspan="3" width="12"><div align="center"><small>Primer Parcial</small></div></th>
+                                            <th colspan="3" width="13%"><div align="center"><small>Segundo Parcial</small></div></th>
+                                            <th rowspan="2" width="3%"><div align="center"><small>Opt.</small></div></th>
+                                            <th colspan="3" width="12%"><div align="center"><small>Parcial Final</small></div></th>
+                                            <th rowspan="2" width="4%"><div align="center"><small>Proyecto de Grado</small></div></th>
+                                            <th rowspan="2" width="4%"><div align="center"><small>Seg. Turno</small></div></th>
+                                            <th rowspan="2" width="4%"><div align="center"><small>Nota Final</small></div></th>
+                                        </tr>
+                                        <tr>
+                                            <th width="25px"><div align="center">T</div></th>
+                                            <th width="25px"><div align="center">P</div></th>
+                                            <th width="25px"><div align="center">L</div></th>
+                                            <th width="26px"><div align="center">T</div></th>
+                                            <th width="26px"><div align="center">P</div></th>
+                                            <th width="26px"><div align="center">L</div></th>
+                                            <th width="25px"><div align="center">T</div></th>
+                                            <th width="25px"><div align="center">P</div></th>
+                                            <th width="25px"><div align="center">L</div></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align: center;font-weight: bold;">2°</td>
+                                            <td>ALGEBRA LINEAL Y TEORÍA MATRICIAL</td>
+                                            <td><div align="center">7.4</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">2.22</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;font-weight: bold;">2°</td>
+                                            <td>CALCULO II</td>
+                                            <td><div align="center">6.23</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">1.87</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;font-weight: bold;">2°</td>
+                                            <td>CONTABILIDAD INTERMEDIA</td>
+                                            <td><div align="center">7,07</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">2.12</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;font-weight: bold;">2°</td>
+                                            <td>MICROECONOMIA</td>
+                                            <td><div align="center">7.49</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">2.25</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: center;font-weight: bold;">2°</td>
+                                            <td>ESTADISTICA</td>
+                                            <td><div align="center">5,8</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">-</div></td>
+                                            <td><div align="center">1.74</div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix hidden-print"></div>
+            </div>
+            <!-- /Page Content -->
+
+            <!-- Footer -->
+            <footer>
+                <div class="pull-right hidden-print">
+                    <small>
+                        <a href="https://notas.emi.edu.bo/alumno#">© 2018 Dirección Nacional de Informática</a> <small>318.140.154.180405</small>
+                    </small>
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /Footer -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./EMI _Notas_files/bootstrap.min.js.descarga"></script>
+    <script src="./EMI _Notas_files/toastr.min.js.descarga"></script>
+    <script src="./EMI _Notas_files/custom.min.js.descarga"></script>
+</body>
+</html>
